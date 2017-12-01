@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr"><head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+  <title>Long Scrolling Website</title>
+  <style>
+#canvas{border:2px solid #eaf2eb;
+  width:1000px;
+  height:10000px;
+  margin: 0 auto;
+  position: relative;
+background-image: url(field.jpg);}
+  h1{ width:1000px;
+height:200px;
+margin: 0 auto;
+padding-top: 150px;
+z-index:-2;
+opacity:0.9;
+text-align: center;
+font-size: 90px;
+font-family: 'Philosopher', sans-serif;
+color: red;}
+/* Africa country starts*/
+h2{text-align: center;
+font-family:'Philosopher', sans-serif;
+font-size: 85px;
+position: absolute;
+top: 150px;
+left: 400px;}
+#africa{
+width:998px;
+height:1500px;}
+#egypt{width:204px;
+height: 120px;
+position: absolute;
+top:350px;
+left: 50px;}
+#morocco{width:204px;
+height: 120px;
+position: absolute;
+top: 550px;
+left: 740px;}
+#nigeria{width:204px;
+  height: 120px;
+position: absolute;
+top: 800px;
+left: 50px;}
+#senegal{width:204px;
+  height: 120px;
+position: absolute;
+top: 1050px;
+left: 740px;}
+#tunisia{width:204px;
+  height: 120px;
+position: absolute;
+top: 1300px;
+left: 50px;}
+/* Africa country ends*/
+/* Asia country starts*/
+#asia{width:998px;
+height:1300px;}
+#asi{text-align: center;
+font-family:'Philosopher', sans-serif;
+font-size: 85px;
+position: absolute;
+top: 1650px;
+left: 400px;}
+#australia{width:204px;
+  height: 120px;
+position: absolute;
+top: 1800px;
+left: 740px;}
+#iran{width:204px;
+  height: 120px;
+position: absolute;
+top: 2000px;
+left: 50px;}
+#japan{width:204px;
+  height: 120px;
+position: absolute;
+top: 2200px;
+left: 740px;}
+#korea{width:204px;
+  height: 120px;
+position: absolute;
+top: 2400px;
+left: 50px;}
+#arabia{width:204px;
+  height: 120px;
+position: absolute;
+top: 2600px;
+left: 740px;}
+/* Asia country ends*/
+/* Europe country starts*/
+#europe{width:998px;
+height:3100px;}
+#eur{text-align: center;
+font-family:'Philosopher', sans-serif;
+font-size: 85px;
+position: absolute;
+top: 2950px;
+left: 400px;}
+#belgium{width:204px;
+  height: 120px;
+position: absolute;
+top: 3150px;
+left: 50px;}
+#croatia{width:204px;
+  height: 120px;
+position: absolute;
+top: 3350px;
+left: 740px;}
+#denmark{width:204px;
+  height: 120px;
+position: absolute;
+top: 3550px;
+left: 50px;}
+#england{width:204px;
+  height: 120px;
+position: absolute;
+top: 3750px;
+left: 740px;}
+#france{width:204px;
+  height: 120px;
+position: absolute;
+top: 3950px;
+left: 50px;}
+#germany{width:204px;
+  height: 120px;
+position: absolute;
+top: 4150px;
+left: 740px;}
+#iceland{width:204px;
+  height: 120px;
+position: absolute;
+top: 4350px;
+left: 50px;}
+#poland{width:204px;
+  height: 120px;
+position: absolute;
+top: 4550px;
+left: 740px;}
+#portugal{width:204px;
+  height: 120px;
+position: absolute;
+top: 4750px;
+left: 50px;}
+#russia{width:204px;
+  height: 120px;
+position: absolute;
+top: 4950px;
+left: 740px;}
+#serbia{width:204px;
+  height: 120px;
+position: absolute;
+top: 5150px;
+left: 50px;}
+#spain{width:204px;
+  height: 120px;
+position: absolute;
+top: 5350px;
+left: 740px;}
+#sweden{width:204px;
+  height: 120px;
+position: absolute;
+top: 5550px;
+left: 50px;}
+#switzerland{width:204px;
+  height: 120px;
+position: absolute;
+top: 5750px;
+left: 740px;}
+/* Europe country ends*/
+/* America country starts*/
+#america{width:998px;
+height:1000px;}
+#ame{text-align: center;
+font-family:'Philosopher', sans-serif;
+font-size: 85px;
+position: absolute;
+top: 6050px;
+left: 50px;}
+#costa{width:204px;
+  height: 120px;
+position: absolute;
+top: 6350px;
+left: 50px;}
+#mexico{width:204px;
+height: 120px;
+position: absolute;
+top: 6550px;
+left: 740px;}
+#panama{width:204px;
+height: 120px;
+position: absolute;
+top: 6750px;
+left: 50px;}
+/* America country ends*/
+/* South country starts*/
+#south{width:998px;
+height:2000px;}
+#sou{text-align: center;
+font-family:'Philosopher', sans-serif;
+font-size: 85px;
+position: absolute;
+top: 7050px;
+left: 250px;}
+#argentina{width:204px;
+height: 120px;
+position: absolute;
+top: 7250px;
+left: 740px;}
+#brazil{width:204px;
+height: 120px;
+position: absolute;
+top: 7450px;
+left: 50px;}
+#colombia{width:204px;
+height: 120px;
+position: absolute;
+top: 7650px;
+left: 740px;}
+#peru{width:204px;
+height: 120px;
+position: absolute;
+top: 7850px;
+left: 50px;}
+#uruguay{width:204px;
+height: 120px;
+position: absolute;
+top: 8050px;
+left: 740px;}
+/* Southcountry ends*/
+
+/* soccer ball icon starts*/
+#icon{width:100px;
+    height:90px;
+    top:300px;
+  left:440px;
+  position:absolute;
+    z-index:2;
+    opacity:0.8;
+}
+/* soccer ball icon ends*/
+
+  </style>
+  <script>
+var icon = document.getElementById("icon");
+
+window.onscroll = function(){
+  var y = window.pageYOffset;
+
+console.log(y);
+
+  icon.style.top = 400 + y * .97 + "px";
+
+  icon.innerHTML = y + "px";}
+
+</script>
+
+</head>
+<body>
+<div id="canvas">
+  <img src="images/soccerball.png" alt="" id="icon">
+<h1>FIFA World Cup 2018</h1>
+
+<div id="africa">
+<h2>Africa</h2>
+<div id="egypt"><img src="images/egypt.png" alt="" id="egy">
+</div>
+<div id="morocco"><img src="images/morocco.png" alt=""></div>
+<div id="nigeria"><img src="images/nigeria.png" alt="" ></div>
+<div id="senegal"><img src="images/senegal.png" alt="" ></div>
+<div id="tunisia"><img src="images/tunisia.png" alt="" ></div>
+</div>
+<div id="asia">
+  <h2 id="asi">Asia</h2>
+  <div id="australia"><img src="images/australia.png" alt=""></div>
+  <div id="iran"><img src="images/iran.png" alt=""></div>
+  <div id="japan"><img src="images/japan.png" alt=""></div>
+  <div id="korea"><img src="images/korea.png" alt=""></div>
+  <div id="arabia"><img src="images/arabia.png" alt=""></div>
+</div>
+
+<div id="europe">
+  <h2 id="eur">Europe</h2>
+  <div id="belgium"><img src="images/belgium.png" alt=""></div>
+  <div id="croatia"><img src="images/croatia.png" alt=""></div>
+  <div id="denmark"><img src="images/denmark.png" alt=""></div>
+  <div id="england"><img src="images/england.png" alt=""></div>
+  <div id="france"><img src="images/france.png" alt=""></div>
+  <div id="germany"><img src="images/germany.png" alt=""></div>
+  <div id="iceland"><img src="images/iceland.png" alt=""></div>
+  <div id="poland"><img src="images/poland.png" alt=""></div>
+  <div id="portugal"><img src="images/portugal.png" alt=""></div>
+  <div id="russia"><img src="images/russia.png" alt=""></div>
+  <div id="serbia"><img src="images/serbia.png" alt=""></div>
+  <div id="spain"><img src="images/spain.png" alt=""></div>
+  <div id="sweden"><img src="images/sweden.png" alt=""></div>
+  <div id="switzerland"><img src="images/switzerland.png" alt=""></div>
+
+
+</div>
+<div id="america">
+  <h2 id="ame">North and Central America</h2>
+  <div id="costa"><img src="images/costa.png" alt=""></div>
+  <div id="mexico"><img src="images/mexico.png" alt=""></div>
+  <div id="panama"><img src="images/panama.png" alt=""></div>
+</div>
+<div id="south">
+  <h2 id="sou">South America</h2>
+  <div id="argentina"><img src="images/argentina.png" alt=""></div>
+  <div id="brazil"><img src="images/brazil.png" alt=""></div>
+  <div id="colombia"><img src="images/colombia.png" alt=""></div>
+  <div id="peru"><img src="images/peru.png" alt=""></div>
+  <div id="uruguay"><img src="images/uruguay.png" alt=""></div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
